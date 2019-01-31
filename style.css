@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31.01.2019, 17:25:12
+    Author     : Jonathan
+*/
+
+#versteckt {        /* this will hide div with id div_id_name */
+  
+}
+#angezeigt {        /* this will hide div with id div_id_name */
+  display: block;  
+  background-color: greenyellow;
+}
