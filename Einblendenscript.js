@@ -6,7 +6,7 @@
 //Speichert Daten bis Anzahl der Messdatenpunkte erreicht ist
 var pufferliste = [];
 //Anzahl der benötigten Messdatenpunkte
-var Messdatenpunkte = 120;
+var Messdatenpunkte = 180;
 //Durschnitt der letzten Messung
 var schnitt = 0;
 //Schwelle um Kamera anzuzeigen
@@ -44,7 +44,7 @@ function start(){
 }
 function on(){
     //document.getElementById("versteckt").style.display = "none";
-    document.getElementById("versteckt").style.height = "80%";
+    document.getElementById("versteckt").style.height = "70%";
 }
 
 function off(){
