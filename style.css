@@ -7,11 +7,43 @@ and open the template in the editor.
     Created on : 31.01.2019, 17:25:12
     Author     : Jonathan
 */
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+h1 {
+  text-align: left;
+  font-size: xx-large;
+}
 
 #versteckt {        /* this will hide div with id div_id_name */
-  
+   position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80%;
+  width: 80%;
+  overflow: auto;
+  background: white; 
 }
 #angezeigt {        /* this will hide div with id div_id_name */
   display: block;  
   background-color: greenyellow;
+}
+
+#videostream{
+    position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+    
+}
+
+#video {
+ object-fit: fill;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;  
 }

@@ -5,9 +5,11 @@
  */
 
 function druck(){
-    document.getElementById("versteckt").style.display = "none";
+    //document.getElementById("versteckt").style.display = "none";
+    document.getElementById("versteckt").style.height = "80%";
 }
 
 function druck2(){
-    document.getElementById("versteckt").style.display = "block";
+    //document.getElementById("versteckt").style.display = "block";
+    document.getElementById("versteckt").style.height = "100%";
 }
