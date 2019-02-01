@@ -16,10 +16,10 @@ function start(){
                 //document.getElementById("versteckt").style.backgroundColor = "red";
                 
                 window.ondevicemotion = function(event) {
-                var x = event.acceleration.x;	   
+                //var x = event.acceleration.x;	   
 		var y = event.acceleration.y;
 		var z = event.acceleration.z;	
-		var summe = Math.abs(x) + Math.abs(y) + Math.abs(z);
+		var summe = 1.5*Math.abs(y) + 1.5*Math.abs(z);
                 pufferliste.push(summe);
                 if(pufferliste.length < Messdatenpunkte){
                     return;
