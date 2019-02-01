@@ -14,6 +14,9 @@ var schwelle = 2;
 function start(){
     
                 document.getElementById("versteckt").style.backgroundColor = "red";
+                
+                window.ondevicemotion = function(event) {
+                    
 		var y = event.acceleration.y;
 		var z = event.acceleration.z;	
 		var summe = Math.abs(y) + Math.abs(z);
@@ -21,6 +24,7 @@ function start(){
                 if(pufferliste.length < Messdatenpunkte){
                     return;
                 }
+                document.getElementById("versteckt").style.backgroundColor = "green";
                 var summe = 0;
                 for(i = 0; i< pufferliste.length; i++){
                     summe += pufferliste[i];
@@ -34,7 +38,7 @@ function start(){
                 else{
                     off();
                 }
-                
+            }
     
     
 }
