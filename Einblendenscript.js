@@ -6,14 +6,14 @@
 //Speichert Daten bis Anzahl der Messdatenpunkte erreicht ist
 var pufferliste = [];
 //Anzahl der benötigten Messdatenpunkte
-var Messdatenpunkte = 200;
+var Messdatenpunkte = 120;
 //Durschnitt der letzten Messung
 var schnitt = 0;
 //Schwelle um Kamera anzuzeigen
-var schwelle = 1;
+var schwelle = 1.5;
 function start(){
     
-                document.getElementById("versteckt").style.backgroundColor = "red";
+                //document.getElementById("versteckt").style.backgroundColor = "red";
                 
                 window.ondevicemotion = function(event) {
                     
@@ -24,7 +24,7 @@ function start(){
                 if(pufferliste.length < Messdatenpunkte){
                     return;
                 }
-                document.getElementById("versteckt").style.backgroundColor = "green";
+                //document.getElementById("versteckt").style.backgroundColor = "green";
                 var summe = 0;
                 for(i = 0; i< pufferliste.length; i++){
                     summe += pufferliste[i];
