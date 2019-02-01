@@ -10,7 +10,7 @@ var Messdatenpunkte = 200;
 //Durschnitt der letzten Messung
 var schnitt = 0;
 //Schwelle um Kamera anzuzeigen
-var schwelle = 2;
+var schwelle = 1;
 function start(){
     
                 document.getElementById("versteckt").style.backgroundColor = "red";
