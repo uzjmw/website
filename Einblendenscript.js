@@ -58,7 +58,7 @@ function off(){
 	   {
 	   return;
 	   }
-	objDiv.scrollTop = objDiv.scrollHeight*0.3;
+	objDiv.scrollTop += objDiv.scrollHeight*0.3;
 	document.getElementById("versteckt").style.height = "100%";
 	check = true;
 }
