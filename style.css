@@ -11,7 +11,8 @@ and open the template in the editor.
 
 h1 {
   text-align: left;
-  font-size: xx-large;
+  left: 10px;
+  font-size: large;
 }
 
 #versteckt {        /* this will hide div with id div_id_name */
