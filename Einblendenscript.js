@@ -44,12 +44,16 @@ function start(){
 }
 function on(){
     //document.getElementById("versteckt").style.display = "none";
-    document.getElementById("versteckt").style.height = "62%";
+    document.getElementById("versteckt").style.height = "70%";
 }
 
 function off(){
     //document.getElementById("versteckt").style.display = "block";
-    document.getElementById("versteckt").style.height = "100%";
 	var objDiv = document.getElementById("versteckt");
-objDiv.scrollTop = objDiv.scrollHeight*0.2;
+	if(objDiv.style.height === "100%")
+	   {
+	   return;
+	   }
+	document.getElementById("versteckt").style.height = "100%";
+	objDiv.scrollTop = objDiv.scrollHeight*0.3;
 }
