@@ -47,6 +47,7 @@ function start(){
 }
 function on(){
     //document.getElementById("versteckt").style.display = "none";
+	var objDiv = document.getElementById("versteckt");
 	objDiv.scrollTop = objDiv.scrollTop - window.innerHeight*0.3;
     document.getElementById("versteckt").style.height = "70%";
 	check = false;	
