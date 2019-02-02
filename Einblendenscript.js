@@ -44,7 +44,7 @@ function start(){
 }
 function on(){
     //document.getElementById("versteckt").style.display = "none";
-    document.getElementById("versteckt").style.height = "70%";
+    document.getElementById("versteckt").style.height = "62%";
 }
 
 function off(){
