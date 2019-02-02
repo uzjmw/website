@@ -49,6 +49,6 @@ function on(){
 
 function off(){
     //document.getElementById("versteckt").style.display = "block";
-	window.scrollTo(0,screen.height*0.2);	
+	window.scrollTo(0,100);	
     document.getElementById("versteckt").style.height = "100%";
 }
