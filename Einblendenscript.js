@@ -6,7 +6,7 @@
 //Speichert Daten bis Anzahl der Messdatenpunkte erreicht ist
 var pufferliste = [];
 //Anzahl der benötigten Messdatenpunkte
-var Messdatenpunkte = 150;
+var Messdatenpunkte = 200;
 //Durschnitt der letzten Messung
 var schnitt = 0;
 //Schwelle um Kamera anzuzeigen
@@ -30,7 +30,7 @@ function start(){
                     summe += pufferliste[i];
                 }
                 schnitt = summe/ pufferliste.length;
-                schnitt = Math.ceil(schnitt * 10000)/10000;
+                schnitt = Math.ceil(schnitt * 1000)/1000;
                 pufferliste = [];
                 if(schnitt > schwelle){
                     on();
