@@ -11,13 +11,13 @@ and open the template in the editor.
 
 h1 {
   text-align: left;
-  left: 100px;
   font-size: large;
 }
 
 #text {
   position: fixed;
-  left: 100px;
+  left: 10px;
+  overflow: scroll;  
   background: white; 
 }    
 #versteckt {        /* this will hide div with id div_id_name */
