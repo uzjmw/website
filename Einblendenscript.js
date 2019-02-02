@@ -11,6 +11,9 @@ var Messdatenpunkte = 200;
 var schnitt = 0;
 //Schwelle um Kamera anzuzeigen
 var schwelle = 1.65;
+
+//wahr wenn Kamera nicht sichtbar
+var check = true;
 function start(){
     
                 //document.getElementById("versteckt").style.backgroundColor = "red";
@@ -45,15 +48,17 @@ function start(){
 function on(){
     //document.getElementById("versteckt").style.display = "none";
     document.getElementById("versteckt").style.height = "70%";
+	check = false;	
 }
 
 function off(){
     //document.getElementById("versteckt").style.display = "block";
 	var objDiv = document.getElementById("versteckt");
-	if(objDiv.style.height === "100%")
+	if(check)
 	   {
 	   return;
 	   }
 	document.getElementById("versteckt").style.height = "100%";
 	objDiv.scrollTop = objDiv.scrollHeight*0.3;
+	check = true;
 }
