@@ -14,12 +14,10 @@ h1 {
   font-size: large;
 }
 
-#text {
-  padding-left: 5%;
-  background: white;
-}    
+ 
 #versteckt {        /* this will hide div with id div_id_name */
-   position: fixed;
+   padding-left: 5%;
+    position: fixed;
   bottom: 0;
   left: 0;
   height: 100%;
