@@ -12,6 +12,7 @@ and open the template in the editor.
 h1 {
   text-align: center;
   font-size: large;
+  overflow: scroll;
 }
 
  
