@@ -15,9 +15,8 @@ h1 {
 }
 
 #text {
-  border-width; 10px;
+  padding-left: 5%;
   background: white;
-  overflow: scroll; 
 }    
 #versteckt {        /* this will hide div with id div_id_name */
    position: fixed;
@@ -25,7 +24,7 @@ h1 {
   left: 0;
   height: 100%;
   width: 100%;
-    
+  overflow: auto; 
   background: white; 
 }
 #angezeigt {        /* this will hide div with id div_id_name */
