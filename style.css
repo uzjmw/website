@@ -17,7 +17,7 @@ h1 {
 #text {
   position: fixed;
   left: 10px;
-  overflow: auto;  
+  
   background: white; 
 }    
 #versteckt {        /* this will hide div with id div_id_name */
@@ -26,7 +26,7 @@ h1 {
   left: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
+  overflow: auto;    
   background: white; 
 }
 #angezeigt {        /* this will hide div with id div_id_name */
