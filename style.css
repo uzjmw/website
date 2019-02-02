@@ -17,7 +17,7 @@ h1 {
 #text {
   border-width; 10px;
   background: white;
-  overflow: auto; 
+  overflow: scroll; 
 }    
 #versteckt {        /* this will hide div with id div_id_name */
    position: fixed;
