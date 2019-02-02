@@ -58,7 +58,8 @@ function off(){
 	   {
 	   return;
 	   }
-	objDiv.scrollTop = objDiv.scrollTop - screen.availHeight*0.3;
+	//objDiv.scrollTop = objDiv.scrollTop - screen.availHeight*0.3;
+	objDiv.scrollTop = objDiv.scrollTop - window.innerHeight*0.3;
 	document.getElementById("versteckt").style.height = "100%";
 	check = true;
 }
