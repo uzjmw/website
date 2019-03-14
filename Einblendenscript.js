@@ -15,9 +15,6 @@ var schwelle = 1.1;
 //wahr wenn Kamera nicht sichtbar
 var check = true;
 function start(){
-		if(!camera(){
-		return;	
-		}
                 //document.getElementById("versteckt").style.backgroundColor = "red";
                 
                 window.ondevicemotion = function(event) {
@@ -72,13 +69,3 @@ function off(){
 	check = true;
 }
 
-function camera(){
-if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    // Not adding `{ audio: true }` since we only want video now
-    navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } }}).then(
-	  return true;  
-    );
-		return false;
-}
-else{return false;}	
-}
