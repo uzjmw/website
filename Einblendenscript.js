@@ -18,14 +18,7 @@ var check = true;
 var video = document.getElementById('video');
 
 function camera(){
-var c = false;	
-// Get access to the camera!
-if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } }})) {
-	 c = true;
-}
-if(c){	
-	start();
-}	
+start();
 }
 
 
