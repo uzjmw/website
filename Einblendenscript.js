@@ -15,14 +15,6 @@ var schwelle = 1.1;
 //wahr wenn Kamera nicht sichtbar
 var check = true;
 
-var video = document.getElementById('video');
-
-function camera(){
-start();
-}
-
-
-
 
 function start(){
                 //document.getElementById("versteckt").style.backgroundColor = "red";
