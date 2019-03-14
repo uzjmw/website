@@ -16,7 +16,7 @@ var schwelle = 1.1;
 var check = true;
 
 function camera(){
-if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } }}) && navigator.permissions.query({name: "camera"})) {
+if(false && navigator.mediaDevices && navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } }}) && navigator.permissions.query({name: "camera"})) {
 document.getElementById("versteckt").style.backgroundColor = "red";
 start();
 	
