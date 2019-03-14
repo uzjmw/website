@@ -10,7 +10,7 @@ var Messdatenpunkte = 200;
 //Durschnitt der letzten Messung
 var schnitt = 0;
 //Schwelle um Kamera anzuzeigen
-var schwelle = 1.65;
+var schwelle = 1.1;
 
 //wahr wenn Kamera nicht sichtbar
 var check = true;
@@ -22,7 +22,7 @@ function start(){
                 //var x = event.acceleration.x;	   
 		var y = event.acceleration.y;
 		var z = event.acceleration.z;	
-		var summe = 1.5*Math.abs(y) + 1.5*Math.abs(z);
+		var summe = Math.abs(y) + Math.abs(z);
                 pufferliste.push(summe);
                 if(pufferliste.length < Messdatenpunkte){
                     return;
