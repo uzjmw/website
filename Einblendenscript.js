@@ -17,7 +17,6 @@ var check = true;
 
 function camera(){
 	navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } }}).then(function(){ 
-document.getElementById("versteckt").style.backgroundColor = "red";
 start();
 	})	
 }	
