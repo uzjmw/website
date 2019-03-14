@@ -16,11 +16,12 @@ var schwelle = 1.1;
 var check = true;
 
 function camera(){
-if(false && navigator.mediaDevices && navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } }}) && navigator.permissions.query({name: "camera"})) {
+navigator.mediaDevices.then(
+	navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } }}).then( 
+		navigator.permissions.query({name: "camera"}).then(
 document.getElementById("versteckt").style.backgroundColor = "red";
 start();
-	
-}
+)))	
 }	
 function start(){
                 //document.getElementById("versteckt").style.backgroundColor = "red";
