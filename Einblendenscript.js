@@ -53,7 +53,7 @@ function on(){
 	   }
 	var objDiv = document.getElementById("versteckt");
 	objDiv.scrollTop = objDiv.scrollTop + window.innerHeight*0.38;
-    document.getElementById("versteckt").style.height = "10%";
+    document.getElementById("versteckt").style.height = "62%";
 	check = false;	
 }
 
