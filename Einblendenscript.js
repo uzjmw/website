@@ -14,6 +14,12 @@ var schwelle = 1.1;
 
 //wahr wenn Kamera nicht sichtbar
 var check = true;
+
+function camera(){
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } }})) {
+start();
+}
+}	
 function start(){
                 //document.getElementById("versteckt").style.backgroundColor = "red";
                 
