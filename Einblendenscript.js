@@ -14,9 +14,8 @@ var schwelle = 1.1;
 
 //wahr wenn Kamera nicht sichtbar
 var check = true;
-
-
 function start(){
+    
                 //document.getElementById("versteckt").style.backgroundColor = "red";
                 
                 window.ondevicemotion = function(event) {
@@ -70,4 +69,3 @@ function off(){
 	document.getElementById("versteckt").style.height = "100%";
 	check = true;
 }
-
