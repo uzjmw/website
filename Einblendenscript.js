@@ -52,8 +52,8 @@ function on(){
 	   return;
 	   }
 	var objDiv = document.getElementById("versteckt");
-	objDiv.scrollTop = objDiv.scrollTop + window.innerHeight*0.3;
-    document.getElementById("versteckt").style.height = "70%";
+	objDiv.scrollTop = objDiv.scrollTop + window.innerHeight*0.38;
+    document.getElementById("versteckt").style.height = "62%";
 	check = false;	
 }
 
@@ -65,7 +65,7 @@ function off(){
 	   return;
 	   }
 	//objDiv.scrollTop = objDiv.scrollTop - screen.availHeight*0.3;
-	objDiv.scrollTop = objDiv.scrollTop - window.innerHeight*0.3;
+	objDiv.scrollTop = objDiv.scrollTop - window.innerHeight*0.38;
 	document.getElementById("versteckt").style.height = "100%";
 	check = true;
 }
