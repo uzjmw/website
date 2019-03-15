@@ -56,6 +56,9 @@ function on(){
 	   {
 	   return;
 	   }
+	if (window.matchMedia("(orientation: landscape)").matches) {
+   return;
+}
 	var objDiv = document.getElementById("versteckt");
 	objDiv.scrollTop = objDiv.scrollTop + window.innerHeight*0.38;
     document.getElementById("versteckt").style.height = "62%";
