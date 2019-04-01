@@ -17,6 +17,7 @@ h1 {
 }
 
 #versteckt {        /* this will hide div with id div_id_name */
+  object-fit: fill;
   position: fixed;
   bottom: 0;
   left: 0;
