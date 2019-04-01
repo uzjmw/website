@@ -63,7 +63,8 @@ function on(){
 	var should = objDiv.scrollTop + window.innerHeight*0.38;
 	document.getElementById("versteckt").style.height = "62%";
 	if(should > objDiv.scrollHeight){
-	document.getElementById("versteckt").style.backgroundColor = "red";
+	objDiv.scrollTop = objDiv.scrollHeight;
+	//document.getElementById("versteckt").style.backgroundColor = "red";
 	}
 	else{
 	objDiv.scrollTop = should;
@@ -83,7 +84,8 @@ function off(){
 	document.getElementById("versteckt").style.height = "100%";
 	var should = objDiv.scrollTop - window.innerHeight*0.38;
 	if(should < 0){
-	document.getElementById("versteckt").style.backgroundColor = "red";
+	objDiv.scrollTop = 0;	
+	//document.getElementById("versteckt").style.backgroundColor = "red";
 	}
 	else{
 	objDiv.scrollTop = should;
