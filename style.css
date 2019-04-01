@@ -41,7 +41,7 @@ h1 {
 }
 
 #video {
- 
+ object-fit: fill;
   position: fixed;
   top: 0;
   left: 0;
