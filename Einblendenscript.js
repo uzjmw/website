@@ -61,6 +61,7 @@ function on(){
 }
 	var objDiv = document.getElementById("versteckt");
 	var should = objDiv.scrollTop + window.innerHeight*0.38;
+	document.getElementById("versteckt").style.height = "62%";
 	if(should > objDiv.scrollHeight){
 	objDiv.scrollTop = objDiv.scrollHeight;
 	document.getElementById("versteckt").style.backgroundColor = "red";
@@ -68,7 +69,7 @@ function on(){
 	else{
 	objDiv.scrollTop = should;
 	}
-    document.getElementById("versteckt").style.height = "62%";
+    //document.getElementById("versteckt").style.height = "62%";
 	check = false;	
 }
 
@@ -80,6 +81,7 @@ function off(){
 	   return;
 	   }
 	//objDiv.scrollTop = objDiv.scrollTop - screen.availHeight*0.3;
+	document.getElementById("versteckt").style.height = "100%";
 	var should = objDiv.scrollTop - window.innerHeight*0.38;
 	if(should < 0){
 	objDiv.scrollTop = 0;
@@ -88,7 +90,7 @@ function off(){
 	else{
 	objDiv.scrollTop = should;
 	}
-	document.getElementById("versteckt").style.height = "100%";
+	//document.getElementById("versteckt").style.height = "100%";
 	check = true;
 }
 
