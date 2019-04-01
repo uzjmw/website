@@ -11,7 +11,6 @@ var Messdatenpunkte = 200;
 var schnitt = 0;
 //Schwelle um Kamera anzuzeigen
 var schwelle = 1.1;
-var ende = 0;
 
 //wahr wenn Kamera nicht sichtbar
 var check = true;
@@ -63,10 +62,8 @@ function on(){
 	var objDiv = document.getElementById("versteckt");
 	var should = objDiv.scrollTop + window.innerHeight*0.38;
 	document.getElementById("versteckt").style.height = "62%";
-	var objDiv2 = document.getElementById("versteckt");
 	if(should > objDiv.scrollHeight){
-	objDiv2.scrollTop = objDiv2.scrollHeight;
-	ende = 1;	
+	objDiv.scrollTop = objDiv.scrollHeight;
 	//document.getElementById("versteckt").style.backgroundColor = "red";
 	}
 	else{
@@ -86,19 +83,13 @@ function off(){
 	//objDiv.scrollTop = objDiv.scrollTop - screen.availHeight*0.3;
 	document.getElementById("versteckt").style.height = "100%";
 	var should = objDiv.scrollTop - window.innerHeight*0.38;
-	if(ende == 1){
-		ende = 0;
-		check = true;
-		return;	
-		}
 	if(should < 0){
 	objDiv.scrollTop = 0;	
 	//document.getElementById("versteckt").style.backgroundColor = "red";
 	}
-	else{	
+	else{
 	objDiv.scrollTop = should;
 	}
 	//document.getElementById("versteckt").style.height = "100%";
 	check = true;
 }
-
