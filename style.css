@@ -24,7 +24,8 @@ h1 {
   height: 100%;
   width: 100%;
   overflow: auto;
-  background: white; 
+  background: white;
+  flex-basis: auto;
 }
 #angezeigt {        /* this will hide div with id div_id_name */
   display: block;  
@@ -38,6 +39,7 @@ h1 {
   height: 100%;
   width: 100%;
   overflow: auto;
+    flex-basis: auto;
     
 }
 
@@ -48,5 +50,6 @@ h1 {
   left: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;  
+  overflow: auto;
+  flex-basis: auto;
 }
