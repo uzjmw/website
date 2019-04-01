@@ -64,7 +64,7 @@ function on(){
 	var should = objDiv.scrollTop + window.innerHeight*0.38;
 	document.getElementById("versteckt").style.height = "62%";
 	if(should > objDiv.scrollHeight){
-	objDiv.scrollTop = objDiv.scrollHeight;
+	objDiv.scrollTop = should;
 	ende = 1;	
 	//document.getElementById("versteckt").style.backgroundColor = "red";
 	}
